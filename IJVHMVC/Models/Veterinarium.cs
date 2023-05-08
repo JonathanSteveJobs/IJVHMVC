@@ -10,14 +10,13 @@ namespace IJVHMVC.Models;
 public partial class Veterinarium
 {
     public int Id { get; set; }
-    [Required]
-    
-    
-    public string? Nombre { get; set; }
 
-    public int? Edad { get; set; }
 
-    public string? NombreDueño { get; set; }
+    [System.ComponentModel.DataAnnotations.Required] public string? Nombre { get; set; }
 
-    public string? MotivoConsulta { get; set; }
+    [System.ComponentModel.DataAnnotations.Required] public int? Edad { get; set; }
+
+    [System.ComponentModel.DataAnnotations.Required] public string? NombreDueño { get; set; }
+    [System.ComponentModel.DataAnnotations.Required] public string? MotivoConsulta { get; set; }
+   
 }
