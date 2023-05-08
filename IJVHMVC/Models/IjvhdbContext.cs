@@ -15,6 +15,8 @@ public partial class IjvhdbContext : DbContext
     {
     }
 
+
+   
     public virtual DbSet<Veterinarium> Veterinaria { get; set; }
 
    
